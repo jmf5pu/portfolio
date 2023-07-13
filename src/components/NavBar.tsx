@@ -1,29 +1,32 @@
 import styles from "./styles/NavBar.module.css";
 import NavBarTab from "./NavBarTab";
-import { useState } from "react";
 
-function NavBar() {
-  const [activeTab, setActiveTab] = useState(1);
+interface NavBarProps {
+  activeTab: number;
+  onClick: (arg0: number) => void;
+}
+
+function NavBar(props: NavBarProps) {
   return (
     <div className={styles.parentDiv}>
       <NavBarTab
-        activeTab={activeTab}
+        activeTab={props.activeTab}
         onClick={() => {
-          setActiveTab(1);
+          props.onClick(1);
         }}
         tabNum={1}
       />
       <NavBarTab
-        activeTab={activeTab}
+        activeTab={props.activeTab}
         onClick={() => {
-          setActiveTab(2);
+          props.onClick(2);
         }}
         tabNum={2}
       />
       <NavBarTab
-        activeTab={activeTab}
+        activeTab={props.activeTab}
         onClick={() => {
-          setActiveTab(3);
+          props.onClick(3);
         }}
         tabNum={3}
       />
