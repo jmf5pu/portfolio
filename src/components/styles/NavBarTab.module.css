@@ -1,0 +1,10 @@
+.tabSelected {
+  background-color: green;
+  display: flex;
+  width: calc(100% / 3);
+}
+.tabNotSelected {
+  background-color: red;
+  display: flex;
+  width: calc(100% / 3);
+}
