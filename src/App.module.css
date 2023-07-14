@@ -1,10 +1,22 @@
 .parentDiv {
+  border-radius: 3em;
+  min-width: 95vw;
+  max-width: 95vw;
+  height: 93vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.3);
+}
+.backgroundDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-color: lightblue;
 }

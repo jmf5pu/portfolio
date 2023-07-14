@@ -1,6 +1,6 @@
 .parentDiv {
-  background-color: orange;
-  height: 15%;
+  background-color: lightslategray;
+  height: 5%;
   display: flex;
   flex-direction: row;
 }

@@ -1,7 +1,10 @@
 .parentDiv {
-  background-color: green;
   display: flex;
-  height: 85%;
+  height: 95%;
   justify-content: center;
   align-items: center;
+  /* colors */
+  background-color: whitesmoke;
+  color: lightslategray;
+  font-family: Helvetica;
 }

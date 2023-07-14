@@ -1,10 +1,19 @@
 .tabSelected {
-  background-color: green;
+  border-radius: 3em 3em 0 0;
+  background-color: whitesmoke;
   display: flex;
   width: calc(100% / 3);
+  justify-content: center;
+  align-items: center;
+  color: lightslategray;
+  font-family: Helvetica;
 }
 .tabNotSelected {
-  background-color: red;
+  background-color: lightslategray;
   display: flex;
   width: calc(100% / 3);
+  justify-content: center;
+  align-items: center;
+  color: lightslategray;
+  font-family: Helvetica;
 }

@@ -16,7 +16,7 @@ function NavBarTab(props: NavBarTabProps) {
       }
       onClick={props.onClick}
     >
-      <h1>tab {props.tabNum}</h1>
+      <p>tab {props.tabNum}</p>
     </div>
   );
 }

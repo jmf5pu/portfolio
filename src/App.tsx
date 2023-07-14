@@ -6,7 +6,7 @@ import { useState } from "react";
 function App() {
   const [activeTab, setActiveTab] = useState(1);
   return (
-    <>
+    <div className={styles.backgroundDiv}>
       <div className={styles.parentDiv}>
         <NavBar
           activeTab={activeTab}
@@ -16,7 +16,7 @@ function App() {
         />
         <MainWindow activeTab={activeTab} />
       </div>
-    </>
+    </div>
   );
 }
 
