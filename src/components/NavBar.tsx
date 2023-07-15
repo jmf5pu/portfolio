@@ -15,6 +15,7 @@ function NavBar(props: NavBarProps) {
           props.onClick(1);
         }}
         tabNum={1}
+        tabName="About"
       />
       <NavBarTab
         activeTab={props.activeTab}
@@ -22,6 +23,7 @@ function NavBar(props: NavBarProps) {
           props.onClick(2);
         }}
         tabNum={2}
+        tabName="Experience"
       />
       <NavBarTab
         activeTab={props.activeTab}
@@ -29,6 +31,7 @@ function NavBar(props: NavBarProps) {
           props.onClick(3);
         }}
         tabNum={3}
+        tabName="Projects"
       />
     </div>
   );

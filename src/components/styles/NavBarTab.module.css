@@ -1,4 +1,36 @@
-.tabSelected {
+.tabOneSelected {
+  border-radius: 3em 3em 0 0;
+  background-color: whitesmoke;
+  display: flex;
+  width: calc(100% / 3);
+  justify-content: center;
+  align-items: center;
+  color: lightslategrey;
+  font-family: Helvetica;
+  z-index: 3;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.tabOne {
+  background-color: lightseagreen;
+  display: flex;
+  width: calc(100% / 3);
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: Helvetica;
+  border-top: 0.1em solid whitesmoke;
+  border-right: 0.1em solid whitesmoke;
+  border-left: 0.1em solid whitesmoke;
+  border-radius: 3em 3em 0 0;
+  z-index: 3;
+}
+
+.tabOne:hover {
+  text-decoration: underline;
+}
+
+.tabTwoSelected {
   border-radius: 3em 3em 0 0;
   background-color: whitesmoke;
   display: flex;
@@ -7,13 +39,61 @@
   align-items: center;
   color: lightslategray;
   font-family: Helvetica;
+  margin-left: -7%;
+  z-index: 3;
+  font-size: 1.3em;
+  font-weight: bold;
 }
-.tabNotSelected {
-  background-color: lightslategray;
+.tabTwo {
+  background-color: lightseagreen;
+  display: flex;
+  width: calc(100% / 3);
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: Helvetica;
+  border-top: 0.1em solid whitesmoke;
+  border-right: 0.1em solid whitesmoke;
+  border-left: 0.1em solid whitesmoke;
+  border-radius: 3em 3em 0 0;
+  margin-left: -7%;
+  z-index: 2;
+}
+
+.tabTwo:hover {
+  text-decoration: underline;
+}
+
+.tabThreeSelected {
+  border-radius: 3em 3em 0 0;
+  background-color: whitesmoke;
   display: flex;
   width: calc(100% / 3);
   justify-content: center;
   align-items: center;
   color: lightslategray;
   font-family: Helvetica;
+  margin-left: -7%;
+  z-index: 3;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.tabThree {
+  background-color: lightseagreen;
+  display: flex;
+  width: calc(100% / 3);
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: Helvetica;
+  border-top: 0.1em solid whitesmoke;
+  border-right: 0.1em solid whitesmoke;
+  border-left: 0.1em solid whitesmoke;
+  border-radius: 3em 3em 0 0;
+  margin-left: -7%;
+  z-index: 1;
+}
+
+.tabThree:hover {
+  text-decoration: underline;
 }

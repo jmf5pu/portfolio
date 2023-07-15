@@ -1,7 +1,15 @@
 import styles from "./styles/FirstTabMainWindow.module.css";
 
 function FirstTabMainWindow() {
-  return <p>first tab main window</p>;
+  return (
+    <>
+      <img
+        src={require("./styles/dummy-profile-pic.jpg")}
+        className={styles.profileImage}
+      />
+      <p>first tab main window</p>
+    </>
+  );
 }
 
 export default FirstTabMainWindow;
