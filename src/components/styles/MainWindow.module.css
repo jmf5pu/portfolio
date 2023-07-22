@@ -1,24 +1,22 @@
 .parentDiv {
   display: flex;
-  height: 100%;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
-  color: lightslategray;
-  font-family: Helvetica;
+  background-color: #ebecf0;
+  color: #344563;
+  font-family: "Roboto", sans-serif;
   box-shadow: 0.5em 0.5em 1em -0.5em rgba(0, 0, 0, 0.3);
   border-radius: 3em;
-  min-width: 100%;
 }
 
 .parentDivFirstTabSelected {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
   height: 100%;
-  justify-content: center;
-  align-items: center;
-  background-color: whitesmoke;
-  color: lightslategray;
-  font-family: Helvetica;
+  background-color: #ebecf0;
+  color: #344563;
+  font-family: "Roboto", sans-serif;
   box-shadow: 0.5em 0.5em 1em -0.5em rgba(0, 0, 0, 0.3);
   border-radius: 0 3em 3em 3em;
   min-width: 100%;
@@ -26,7 +24,24 @@
 
 .parentDivOutline {
   height: 94%;
-  border-left: 0.1em solid whitesmoke;
   border-radius: 0 3em 3em 3em;
-  background-color: lightseagreen;
+}
+
+@media (max-width: 600px) {
+  .parentDivFirstTabSelected {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    background-color: #ebecf0;
+    color: #344563;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0.5em 0.5em 1em -0.5em rgba(0, 0, 0, 0.3);
+    border-radius: 0 3em 3em 3em;
+    min-width: 100%;
+  }
+
+  .parentDivOutline {
+    height: auto;
+    border-radius: 0 3em 3em 3em;
+  }
 }

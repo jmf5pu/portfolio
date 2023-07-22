@@ -15,6 +15,6 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  background-color: lightblue;
+  overflow: auto;
+  background-color: #091e42;
 }
