@@ -19,10 +19,6 @@
   border-radius: 3em 3em 0 0;
 }
 
-.tabOne:hover {
-  font-weight: bold;
-}
-
 .tabTwoSelected {
   border-radius: 3em 3em 0 0;
   background-color: #ebecf0;
@@ -42,10 +38,7 @@
   color: #ebecf0;
   font-family: "Roboto", sans-serif;
   border-radius: 3em 3em 0 0;
-}
-
-.tabTwo:hover {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .tabThreeSelected {
@@ -69,6 +62,42 @@
   border-radius: 3em 3em 0 0;
 }
 
-.tabThree:hover {
+.tabUnderline {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ebecf0;
+}
+
+.tabUnderlineAnimation {
+  position: relative;
+  color: #ebecf0;
+  text-decoration: none;
+}
+
+.tabUnderlineAnimation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ebecf0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out, 0s font-weight ease-out;
+}
+
+.tabUnderlineAnimation:hover {
   font-weight: bold;
+  transition-delay: 0.15s;
+}
+
+.tabUnderlineAnimation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

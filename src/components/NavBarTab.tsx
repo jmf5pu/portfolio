@@ -8,43 +8,38 @@ interface NavBarTabProps {
 }
 
 function NavBarTab(props: NavBarTabProps) {
+  var isActive: boolean = props.tabNum === props.activeTab;
   if (props.tabNum === 1) {
     return (
       <div
-        className={
-          props.tabNum === props.activeTab
-            ? styles.tabOneSelected
-            : styles.tabOne
-        }
+        className={isActive ? styles.tabOneSelected : styles.tabOne}
         onClick={props.onClick}
       >
-        <p>{props.tabName}</p>
+        <p className={!isActive ? styles.tabUnderlineAnimation : ""}>
+          {props.tabName}
+        </p>
       </div>
     );
   } else if (props.tabNum === 2) {
     return (
       <div
-        className={
-          props.tabNum === props.activeTab
-            ? styles.tabTwoSelected
-            : styles.tabTwo
-        }
+        className={isActive ? styles.tabTwoSelected : styles.tabTwo}
         onClick={props.onClick}
       >
-        <p>{props.tabName}</p>
+        <p className={!isActive ? styles.tabUnderlineAnimation : ""}>
+          {props.tabName}
+        </p>
       </div>
     );
   } else if (props.tabNum === 3) {
     return (
       <div
-        className={
-          props.tabNum === props.activeTab
-            ? styles.tabThreeSelected
-            : styles.tabThree
-        }
+        className={isActive ? styles.tabThreeSelected : styles.tabThree}
         onClick={props.onClick}
       >
-        <p>{props.tabName}</p>
+        <p className={!isActive ? styles.tabUnderlineAnimation : ""}>
+          {props.tabName}
+        </p>
       </div>
     );
   } else {
