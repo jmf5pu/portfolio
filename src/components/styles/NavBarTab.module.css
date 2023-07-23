@@ -1,5 +1,4 @@
-.tabOneSelected {
-  border-radius: 3em 3em 0 0;
+.activeTab {
   background-color: #ebecf0;
   display: flex;
   width: calc(100% / 3);
@@ -7,70 +6,24 @@
   align-items: center;
   color: #344563;
   font-family: "Roboto", sans-serif;
-  font-size: 1.3em;
-}
-.tabOne {
-  display: flex;
-  width: calc(100% / 3);
-  justify-content: center;
-  align-items: center;
-  color: #ebecf0;
-  font-family: "Roboto", sans-serif;
-  border-radius: 3em 3em 0 0;
+  font-size: 1.2em;
+  box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
-.tabTwoSelected {
-  border-radius: 3em 3em 0 0;
-  background-color: #ebecf0;
-  display: flex;
-  width: calc(100% / 3);
-  justify-content: center;
-  align-items: center;
-  color: #344563;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.3em;
-}
-.tabTwo {
+.inactiveTab {
   display: flex;
   width: calc(100% / 3);
   justify-content: center;
   align-items: center;
   color: #ebecf0;
   font-family: "Roboto", sans-serif;
-  border-radius: 3em 3em 0 0;
-  font-weight: normal;
-}
-
-.tabThreeSelected {
-  border-radius: 3em 3em 0 0;
-  background-color: #ebecf0;
-  display: flex;
-  width: calc(100% / 3);
-  justify-content: center;
-  align-items: center;
-  color: #344563;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.3em;
-}
-.tabThree {
-  display: flex;
-  width: calc(100% / 3);
-  justify-content: center;
-  align-items: center;
-  color: #ebecf0;
-  font-family: "Roboto", sans-serif;
-  border-radius: 3em 3em 0 0;
 }
 
 .tabUnderline {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: #ebecf0;
+  position: relative;
+  text-decoration: none;
+  border-bottom: 2px solid #0052cc;
 }
 
 .tabUnderlineAnimation {
@@ -89,7 +42,7 @@
   left: 0;
   background-color: #ebecf0;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out, 0s font-weight ease-out;
+  transition: transform 0.25s ease-out;
 }
 
 .tabUnderlineAnimation:hover {
