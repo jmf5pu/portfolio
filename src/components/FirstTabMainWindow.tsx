@@ -14,23 +14,31 @@ function FirstTabMainWindow() {
       </div>
       <div className={styles.rightCol}>
         <div className={styles.personalStatement}>
-          Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say
-          that they were perfectly normal, thank you very much. They were the
-          mysterious, because they just didn’t hold with such nonsense. Mr.
-          <br />
-          <br />
-          Dursley was the director of a firm called Grunnings, which made
-          drills. He was a big, beefy man with hardly any neck, although he did
-          have a very large mustache. Mrs. Dursley was thin and blonde and had
-          she spent so much of her time craning over garden fences, spying on
-          the neighbors. The Dursley s had a small son called Dudley and in
-          their opinion there was no finer boy anywhere. The Dursleys had
-          <br />
-          <br />
-          everything they wanted, but they also had a secret, and their greatest
-          fear was that somebody would discover it. They didn’t think they could
-          bear it if anyone found out about the Potters. Mrs. Potter was Mrs.
-          Dursley’s sister, but they hadn’t
+          <h1>Who am I?</h1>
+          <p className={styles.indentedParagraph}>
+            Hello! I'm Justin Fabrizio, and welcome to my portfolio site. I'm
+            hoping this site will give you a quick snapshot of my life,
+            interests, and experience as a software developer.
+          </p>
+          <p className={styles.indentedParagraph}>
+            Currently I'm a software engineer at AKASA, a bay area startup that
+            is driving change in the healthcare/finance space through their
+            machine-learning enhanced automation software. My alma mater is the
+            University of Virginia, where I completed a Bachelor of Science in
+            Computer Science while following a focal path in cybersecurity.
+          </p>
+          <p className={styles.indentedParagraph}>
+            Outside of the office, I love spending time outdoors. As a
+            Charlottesville native, I can frequently be found paddling on the
+            Rivanna River and local reservoirs or hiking in the Blue Ridge
+            Mountains just west of Albemarle County. My other hobbies include
+            brazilian jiu jitsu, running, and fishing.
+          </p>
+          <p className={styles.indentedParagraph}>
+            Thanks again for visiting my personal site. Whether you have
+            feedback, inquiries, or exciting projects, always feel free to reach
+            out!
+          </p>
         </div>
       </div>
     </>

@@ -1,19 +1,26 @@
+h1 {
+  text-align: center;
+}
+
+.indentedParagraph {
+  text-indent: 2em;
+}
+
 .leftCol {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-#p {
-  background-color: #0052cc;
+  height: 100%;
+  overflow: hidden;
 }
 
 .rightCol {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  overflow: hidden;
 }
 
 .profileImage {
@@ -23,6 +30,35 @@
 }
 
 .personalStatement {
-  margin: 5em;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  margin-right: 5em;
   padding: 1em;
+}
+
+@media (max-width: 600px) {
+  .leftCol {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    overflow: visible;
+  }
+
+  .rightCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    overflow: visible;
+  }
+  .personalStatement {
+    margin: 2em;
+    padding: 1em;
+  }
+  .indentedParagraph {
+    text-indent: 0em;
+  }
 }

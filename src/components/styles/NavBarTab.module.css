@@ -7,7 +7,7 @@
   color: #344563;
   font-family: "Roboto", sans-serif;
   font-size: 1.2em;
-  box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.3); TODO: figure out how to only shade all sides but bottom*/
   z-index: 1;
 }
 
