@@ -1,0 +1,6 @@
+.flexContainer {
+  display: flex;
+  background-color: orange;
+  height: 10%;
+  width: 100%;
+}

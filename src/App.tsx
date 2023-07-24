@@ -16,6 +16,7 @@ function App() {
         />
         <MainWindow activeTab={activeTab} />
       </div>
+      {/* <div className={styles.bottomText}>0052cc; Justin Fabrizio 2023</div> TODO: finish this*/}
     </div>
   );
 }

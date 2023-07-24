@@ -1,0 +1,18 @@
+.flexContainer {
+  background-color: blue;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.leftArrow {
+  background-color: green;
+  height: 100%;
+  width: 10%;
+}
+
+.rightArrow {
+  background-color: purple;
+  height: 100%;
+  width: 10%;
+}

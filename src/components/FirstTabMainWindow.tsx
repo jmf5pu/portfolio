@@ -8,7 +8,7 @@ import {
 
 function FirstTabMainWindow() {
   return (
-    <>
+    <div className={styles.gridContainer}>
       <div className={styles.leftCol}>
         <img
           src={require("../images/profile.jpg")}
@@ -68,7 +68,7 @@ function FirstTabMainWindow() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
