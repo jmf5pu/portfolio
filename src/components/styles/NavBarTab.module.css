@@ -48,6 +48,7 @@
 .tabUnderlineAnimation:hover {
   font-weight: bold;
   transition-delay: 0.15s;
+  cursor: pointer;
 }
 
 .tabUnderlineAnimation:hover::after {

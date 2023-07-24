@@ -1,4 +1,5 @@
 import styles from "./styles/FirstTabMainWindow.module.css";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 function FirstTabMainWindow() {
   return (
@@ -8,17 +9,42 @@ function FirstTabMainWindow() {
           src={require("./styles/dummy-profile-pic.jpg")}
           className={styles.profileImage}
         />
-        <p>j_fab@outlook.com</p>
-        <p>(434)-270-9746</p>
-        <p>github.com/jmf5pu</p>
+        <div className={styles.contactInfoBubble}>
+          <a href="mailto:jmf5pu@virginia.edu" className={styles.contactInfo}>
+            jmf5pu@virginia.edu
+          </a>
+        </div>
+        <div className={styles.contactInfoBubble}>
+          <a href="tel:+14342709746" className={styles.contactInfo}>
+            +1 (434)-270-9746
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://github.com/jmf5pu"
+            target="_blank"
+            rel="noopener"
+            aria-label="Github"
+          >
+            <FaGithubSquare className={styles.socialIcon} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jf371a5/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin className={styles.socialIcon} />
+          </a>
+        </div>
       </div>
       <div className={styles.rightCol}>
         <div className={styles.personalStatement}>
           <h1>Who am I?</h1>
           <p className={styles.indentedParagraph}>
             Hello! I'm Justin Fabrizio, and welcome to my portfolio site. I'm
-            hoping this site will give you a quick snapshot of my life,
-            interests, and experience as a software developer.
+            hoping this will give you a quick snapshot of my life, interests,
+            and experience as a software developer.
           </p>
           <p className={styles.indentedParagraph}>
             Currently I'm a software engineer at AKASA, a bay area startup that
