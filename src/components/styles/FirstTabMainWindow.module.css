@@ -1,19 +1,58 @@
+h1 {
+  text-align: center;
+}
+
+.contactInfoBubble {
+  background-color: #344563;
+  padding: 0.5em;
+  border-radius: 2em;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+}
+
+.contactInfoBubble:hover {
+  background-color: #0052cc;
+  text-decoration: underline;
+  text-decoration-color: #ebecf0;
+  padding: 0.5em;
+  border-radius: 2em;
+}
+
+.contactInfo {
+  color: #ebecf0;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none; /* Remove the default underline */
+}
+
+.socialIcon {
+  color: #344563;
+  font-size: 2.5em;
+}
+.socialIcon:hover {
+  color: #0052cc;
+  font-size: 2.5em;
+  cursor: pointer;
+}
+
+.indentedParagraph {
+  text-indent: 2em;
+}
+
 .leftCol {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-#p {
-  background-color: #0052cc;
+  height: 100%;
+  overflow: hidden;
 }
 
 .rightCol {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  overflow: hidden;
 }
 
 .profileImage {
@@ -23,7 +62,35 @@
 }
 
 .personalStatement {
-  margin: 5em;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  margin-right: 5em;
   padding: 1em;
-  border-radius: 1em;
+}
+
+@media (max-width: 600px) {
+  .leftCol {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    overflow: visible;
+  }
+
+  .rightCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    overflow: visible;
+  }
+  .personalStatement {
+    margin: 2em;
+    padding: 1em;
+  }
+  .indentedParagraph {
+    text-indent: 0em;
+  }
 }

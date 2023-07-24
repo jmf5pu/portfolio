@@ -15,16 +15,8 @@ function MainWindow(props: MainWindowProps) {
   };
   if ([1, 2, 3].includes(props.activeTab)) {
     return (
-      <div className={styles.parentDivOutline}>
-        <div
-          className={
-            props.activeTab === 1
-              ? styles.parentDivFirstTabSelected
-              : styles.parentDiv
-          }
-        >
-          {mainWindowComponents[props.activeTab]}
-        </div>
+      <div className={styles.parentDiv}>
+        {mainWindowComponents[props.activeTab]}
       </div>
     );
   } else {
