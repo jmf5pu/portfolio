@@ -1,25 +1,26 @@
 import styles from "./styles/FirstTabMainWindow.module.css";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import {
+  FaGithubSquare,
+  FaLinkedin,
+  FaPhoneSquare,
+  FaMailBulk,
+} from "react-icons/fa";
 
 function FirstTabMainWindow() {
   return (
     <>
       <div className={styles.leftCol}>
         <img
-          src={require("./styles/dummy-profile-pic.jpg")}
+          src={require("../images/profile.jpg")}
           className={styles.profileImage}
         />
-        <div className={styles.contactInfoBubble}>
-          <a href="mailto:jmf5pu@virginia.edu" className={styles.contactInfo}>
-            jmf5pu@virginia.edu
+        <div className={styles.contactInfo}>
+          <a href="mailto:jmf5pu@virginia.edu">
+            <FaMailBulk className={styles.socialIcon} />
           </a>
-        </div>
-        <div className={styles.contactInfoBubble}>
-          <a href="tel:+14342709746" className={styles.contactInfo}>
-            +1 (434)-270-9746
+          <a href="tel:+14342709746">
+            <FaPhoneSquare className={styles.socialIcon} />
           </a>
-        </div>
-        <div>
           <a
             href="https://github.com/jmf5pu"
             target="_blank"
