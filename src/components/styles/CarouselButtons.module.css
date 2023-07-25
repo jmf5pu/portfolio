@@ -1,5 +1,6 @@
 .flexContainer {
   display: flex;
+  justify-content: space-evenly;
   background-color: orange;
   height: 10%;
   width: 100%;

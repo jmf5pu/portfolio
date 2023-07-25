@@ -1,8 +1,15 @@
-.flexContainer {
+.outerFlexContainer {
   background-color: blue;
   display: flex;
   height: 100%;
   width: 100%;
+}
+
+.innerFlexContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
 }
 
 .leftArrow {

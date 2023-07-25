@@ -1,10 +1,10 @@
 import styles from "./styles/NavBar.module.css";
 import NavBarTab from "./NavBarTab";
 
-interface NavBarProps {
+type NavBarProps = {
   activeTab: number;
   onClick: (arg0: number) => void;
-}
+};
 
 function NavBar(props: NavBarProps) {
   return (

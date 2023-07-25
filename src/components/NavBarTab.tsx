@@ -1,11 +1,11 @@
 import styles from "./styles/NavBarTab.module.css";
 
-interface NavBarTabProps {
+type NavBarTabProps = {
   activeTab: number;
   onClick: () => void;
   tabNum: number;
   tabName: string;
-}
+};
 
 function NavBarTab(props: NavBarTabProps) {
   var isActive: boolean = props.tabNum === props.activeTab;
