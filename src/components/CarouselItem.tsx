@@ -8,11 +8,14 @@ function CarouselItem(props: CarouselItemProps) {
   return (
     <div className={styles.FlexContainer}>
       <div className={styles.gridContainer}>
-        {props.project.title}
-        <br />
-        {props.project.description}
-        <br />
-        {props.project.image}
+        <div className={styles.imageContainer}>image</div>
+        <div className={styles.descriptionContainer}>
+          {props.project.title}
+          <br />
+          {props.project.description}
+          <br />
+          {props.project.image}
+        </div>
       </div>
     </div>
   );

@@ -41,7 +41,9 @@ function ThirdTabMainWindow() {
         <button
           className="button-arrow"
           onClick={() => {
-            setActiveIndex(activeIndex - 1);
+            setActiveIndex(
+              activeIndex > 0 ? activeIndex - 1 : projects.length - 1
+            );
           }}
         >
           <span className="material-symbols-outlined">arrow_back_ios</span>
@@ -56,13 +58,19 @@ function ThirdTabMainWindow() {
             return <CarouselItem project={project} />;
           })}
         </div>
-        <CarouselButtons projects={projects} activeIndex={activeIndex} />
+        <CarouselButtons
+          projects={projects}
+          activeIndex={activeIndex}
+          onClick={setActiveIndex}
+        />
       </div>
       <div className={styles.rightArrow}>
         <button
           className="button-arrow"
           onClick={() => {
-            setActiveIndex(activeIndex + 1);
+            setActiveIndex(
+              activeIndex < projects.length - 1 ? activeIndex + 1 : 0
+            );
           }}
         >
           <span className="material-symbols-outlined">arrow_forward_ios</span>
