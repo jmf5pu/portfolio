@@ -12,7 +12,9 @@ function CarouselButtons(props: CarouselButtonsProps) {
       {props.projects.map((project, index) => (
         <button className={styles.carouselButton}>
           <span key={index} className="material-symbols-outlined">
-            radio_button_unchecked
+            {index === props.activeIndex
+              ? "radio_button_checked"
+              : "radio_button_unchecked"}
           </span>
         </button>
       ))}

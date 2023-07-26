@@ -37,14 +37,37 @@ function ThirdTabMainWindow() {
 
   return (
     <div className={styles.outerFlexContainer}>
-      <div className={styles.leftArrow}></div>
+      <div className={styles.leftArrow}>
+        <button
+          className="button-arrow"
+          onClick={() => {
+            setActiveIndex(activeIndex - 1);
+          }}
+        >
+          <span className="material-symbols-outlined">arrow_back_ios</span>
+        </button>
+      </div>
       <div className={styles.innerFlexContainer}>
-        {projects.map((project) => {
-          return <CarouselItem project={project} />;
-        })}
+        <div
+          className={styles.itemFlexContainer}
+          style={{ transform: `translate(-${activeIndex * 100}%)` }}
+        >
+          {projects.map((project) => {
+            return <CarouselItem project={project} />;
+          })}
+        </div>
         <CarouselButtons projects={projects} activeIndex={activeIndex} />
       </div>
-      <div className={styles.rightArrow}></div>
+      <div className={styles.rightArrow}>
+        <button
+          className="button-arrow"
+          onClick={() => {
+            setActiveIndex(activeIndex + 1);
+          }}
+        >
+          <span className="material-symbols-outlined">arrow_forward_ios</span>
+        </button>
+      </div>
     </div>
   );
 }

@@ -8,18 +8,33 @@
 .innerFlexContainer {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 90%;
   width: 80%;
 }
 
+.itemFlexContainer {
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.buttonFlexContainer {
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  width: 80%;
+}
 .leftArrow {
   background-color: green;
   height: 100%;
   width: 10%;
+  z-index: 1;
 }
 
 .rightArrow {
   background-color: purple;
   height: 100%;
   width: 10%;
+  z-index: 1;
 }
