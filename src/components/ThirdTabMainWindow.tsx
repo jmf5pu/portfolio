@@ -37,16 +37,16 @@ function ThirdTabMainWindow() {
 
   return (
     <div className={styles.outerFlexContainer}>
-      <div className={styles.leftArrow}>
+      <div className={styles.arrowContainer}>
         <button
-          className="button-arrow"
+          className={styles.arrow}
           onClick={() => {
             setActiveIndex(
               activeIndex > 0 ? activeIndex - 1 : projects.length - 1
             );
           }}
         >
-          <span className="material-symbols-outlined">arrow_back_ios</span>
+          <span className="material-symbols-outlined">chevron_left</span>
         </button>
       </div>
       <div className={styles.innerFlexContainer}>
@@ -64,16 +64,16 @@ function ThirdTabMainWindow() {
           onClick={setActiveIndex}
         />
       </div>
-      <div className={styles.rightArrow}>
+      <div className={styles.arrowContainer}>
         <button
-          className="button-arrow"
+          className={styles.arrow}
           onClick={() => {
             setActiveIndex(
               activeIndex < projects.length - 1 ? activeIndex + 1 : 0
             );
           }}
         >
-          <span className="material-symbols-outlined">arrow_forward_ios</span>
+          <span className="material-symbols-outlined">chevron_right</span>
         </button>
       </div>
     </div>

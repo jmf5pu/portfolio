@@ -1,7 +1,17 @@
 .flexContainer {
   display: flex;
   justify-content: space-evenly;
-  background-color: orange;
   height: 10%;
   width: 100%;
+}
+
+.carouselButton {
+  color: #344563;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.carouselButton:hover {
+  color: #0052cc;
 }

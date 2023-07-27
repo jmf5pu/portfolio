@@ -10,11 +10,8 @@ function CarouselItem(props: CarouselItemProps) {
       <div className={styles.gridContainer}>
         <div className={styles.imageContainer}>image</div>
         <div className={styles.descriptionContainer}>
-          {props.project.title}
-          <br />
-          {props.project.description}
-          <br />
-          {props.project.image}
+          <h1>{props.project.title}</h1>
+          <p>{props.project.description}</p>
         </div>
       </div>
     </div>
