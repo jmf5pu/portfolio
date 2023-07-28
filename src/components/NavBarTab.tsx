@@ -14,13 +14,13 @@ function NavBarTab(props: NavBarTabProps) {
       className={isActive ? styles.activeTab : styles.inactiveTab}
       onClick={props.onClick}
     >
-      <p
+      <div
         className={
           !isActive ? styles.tabUnderlineAnimation : styles.tabUnderline
         }
       >
         {props.tabName}
-      </p>
+      </div>
     </div>
   );
 }

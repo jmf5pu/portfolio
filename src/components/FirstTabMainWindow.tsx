@@ -41,7 +41,7 @@ function FirstTabMainWindow() {
       </div>
       <div className={styles.rightCol}>
         <div className={styles.personalStatement}>
-          <h1>Who am I?</h1>
+          <h1 className={styles.aboutTitle}>Who am I?</h1>
           <p className={styles.indentedParagraph}>
             Hello! I'm Justin Fabrizio, and welcome to my portfolio site. I'm
             hoping this will give you a quick snapshot of my life, interests,

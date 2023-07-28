@@ -1,11 +1,22 @@
-h1 {
-  text-align: center;
+.projectTitle {
+  position: relative;
+  width: 95%;
+  text-decoration: none;
+  border-bottom: 2px solid #344563;
+  text-align: left;
+  margin: 0;
+}
+
+.projectDescription {
+  margin: 0.5em;
+  text-indent: 2em;
 }
 
 .FlexContainer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  white-space: normal;
   height: 100%;
   width: 100%;
 }
@@ -14,7 +25,7 @@ h1 {
   display: grid;
   height: 100%;
   width: 100%;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 50% 50%;
   grid-template-rows: auto;
 }
 
@@ -30,5 +41,4 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-
 /* TODO: check for screen width to modify grid rows/columns correctly */
