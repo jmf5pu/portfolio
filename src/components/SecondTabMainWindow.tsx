@@ -43,9 +43,6 @@ function SecondTabMainWindow() {
       ))}
     </div>
   );
-  // TODO: subheaders for work, then school, experiences
-  // add images of school and work logos
-  // list skills used by headers for each experience
 }
 
 export type { ExperienceDetails };
