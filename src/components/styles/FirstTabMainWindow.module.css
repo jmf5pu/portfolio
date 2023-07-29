@@ -4,7 +4,7 @@ h1 {
 
 .aboutTitle {
   position: relative;
-  width: 95%;
+  width: 100%;
   text-decoration: none;
   border-bottom: 2px solid #344563;
   text-align: left;
@@ -60,14 +60,15 @@ h1 {
   max-width: 75%;
   height: auto;
   border-radius: 50%;
-  box-shadow: 0 0 1em 0.5em #344563;
+  box-shadow: 0 0 1em 0.5em #6b778c;
 }
 
 .personalStatement {
   margin-top: 5em;
   margin-bottom: 5em;
   margin-right: 5em;
-  padding: 1em;
+  width: 100%;
+  border-bottom: 2px solid #344563;
 }
 
 @media (max-width: 600px) {

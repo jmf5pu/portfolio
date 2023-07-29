@@ -13,6 +13,7 @@ type Project = {
   description: string;
   tech: string[];
   image: string; // path
+  urls: Record<string, string>; // { link name : url }
 };
 
 function ThirdTabMainWindow() {
@@ -25,6 +26,7 @@ function ThirdTabMainWindow() {
         "Civic Connect streamlines the process of contacting your local representatives by providing a single stop for a citizens to lookup their representatives' contact information via an address search then create, save, or share message templates with other users. I participated in a team of four students to construct Civic Connect as a part of my CS3240 class at UVA over a series of 6 biweekly sprints.",
       tech: ["Python", "Django", "PostgreSQL", "Scrum"],
       image: "some/image/path",
+      urls: { "View the source code on Github": "github.com/jmf5pu" },
     },
     {
       title: "CNA Scheduler",
@@ -32,6 +34,7 @@ function ThirdTabMainWindow() {
         "CNA Scheduler provides a one stop shop for elder care staff management. Built with Django and deployed on Heroku, this app was in use by six Certified Nursing Assistants and two managers over a 1 year period from 2/2022-2/2023, acting as a scheduling board, care log, and time clock for elder care staff. Carley Scheduler also provided SMS and email notifications of CNA activities to ensure that patients were always being cared for.",
       tech: ["Python", "Django", "PostgreSQL"],
       image: "some/image/path",
+      urls: { "View the source code on Github": "github.com/jmf5pu" },
     },
     {
       title: "Social Surge",
@@ -39,6 +42,7 @@ function ThirdTabMainWindow() {
         "Social Surge is desktop application that allows users to rapidly automate youtube views off of their local system by leveraging a multithreaded PuppeteerJS script. Social Surge avoids common bot detection methods by utilizing a rotating proxy system. The user interface for Social Surge was constructed using ElectronJS.",
       tech: ["ElectronJS", "PuppeteerJS", "NodeJS", "TailwindCSS"],
       image: "some/image/path",
+      urls: { "View the source code on Github": "github.com/jmf5pu" },
     },
   ];
 

@@ -19,6 +19,13 @@ function CarouselItem(props: CarouselItemProps) {
           <p className={styles.projectDescription}>
             {props.project.description}
           </p>
+          <div>
+            {Object.entries(props.project.urls).map(([key, value]) => (
+              <p>
+                {key}, {value}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </div>
