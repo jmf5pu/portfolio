@@ -1,5 +1,5 @@
 import styles from "./styles/Experience.module.css";
-import { ExperienceDetails } from "./SecondTabMainWindow";
+import { ExperienceDetails } from "./ExperienceTab";
 
 type ExperienceProps = {
   experienceDetails: ExperienceDetails;

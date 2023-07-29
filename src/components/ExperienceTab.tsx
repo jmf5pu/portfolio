@@ -1,4 +1,4 @@
-import styles from "./styles/SecondTabMainWindow.module.css";
+import styles from "./styles/ExperienceTab.module.css";
 import Experience from "./Experience";
 
 type ExperienceDetails = {

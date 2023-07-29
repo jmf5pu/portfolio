@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./styles/MainWindow.module.css";
-import FirstTabMainWindow from "./FirstTabMainWindow";
-import SecondTabMainWindow from "./SecondTabMainWindow";
-import ThirdTabMainWindow from "./ThirdTabMainWindow";
+import AboutTab from "./AboutTab";
+import ExperienceTab from "./ExperienceTab";
+import ProjectsTab from "./ProjectsTab";
 
 type MainWindowProps = {
   activeTab: number;
@@ -10,9 +10,9 @@ type MainWindowProps = {
 
 function MainWindow(props: MainWindowProps) {
   const mainWindowComponents: { [key: number]: React.ReactNode } = {
-    1: <FirstTabMainWindow />,
-    2: <SecondTabMainWindow />,
-    3: <ThirdTabMainWindow />,
+    1: <AboutTab />,
+    2: <ExperienceTab />,
+    3: <ProjectsTab />,
   };
   if ([1, 2, 3].includes(props.activeTab)) {
     return (

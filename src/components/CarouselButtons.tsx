@@ -1,5 +1,5 @@
 import styles from "./styles/CarouselButtons.module.css";
-import { Project } from "./ThirdTabMainWindow";
+import { Project } from "./ProjectsTab";
 
 type CarouselButtonsProps = {
   projects: Project[];

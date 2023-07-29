@@ -1,4 +1,4 @@
-import styles from "./styles/ThirdTabMainWindow.module.css";
+import styles from "./styles/ProjectsTab.module.css";
 import CarouselItem from "./CarouselItem";
 import CarouselButtons from "./CarouselButtons";
 import React, { useState } from "react";

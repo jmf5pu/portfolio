@@ -1,5 +1,5 @@
 import styles from "./styles/CarouselItem.module.css";
-import { Project } from "./ThirdTabMainWindow";
+import { Project } from "./ProjectsTab";
 import { useState, useEffect } from "react";
 type CarouselItemProps = {
   project: Project;
