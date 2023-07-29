@@ -84,4 +84,15 @@
   box-shadow: 8px 8px 4px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* TODO: check for screen width to modify grid rows/columns correctly */
+@media (max-width: 1000px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .descriptionContainer {
+    margin-top: 30px;
+  }
+  .image {
+    box-shadow: none;
+  }
+}

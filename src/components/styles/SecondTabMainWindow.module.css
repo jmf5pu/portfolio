@@ -6,3 +6,12 @@
   align-items: center;
   justify-content: space-evenly;
 }
+
+@media (max-width: 1000px) {
+  .flexContainer {
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

@@ -45,3 +45,12 @@
 .arrow:hover {
   color: #0052cc;
 }
+
+@media (max-width: 1000px) {
+  .outerFlexContainer {
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

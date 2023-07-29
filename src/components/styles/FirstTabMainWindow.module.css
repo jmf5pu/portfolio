@@ -20,14 +20,14 @@ h1 {
 }
 
 .contactInfo {
-  margin-top: 2em;
+  margin-top: 30px;
 }
 
 .socialIcon {
   color: #344563;
-  font-size: 2.5em;
-  margin-left: 0.1em;
-  margin-right: 0.1em;
+  font-size: 35px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .socialIcon:hover {
   color: #0052cc;
@@ -36,7 +36,7 @@ h1 {
 }
 
 .indentedParagraph {
-  text-indent: 2em;
+  text-indent: 20px;
 }
 
 .leftCol {
@@ -60,20 +60,24 @@ h1 {
   max-width: 75%;
   height: auto;
   border-radius: 50%;
-  box-shadow: 0 0 1em 0.5em #6b778c;
+  box-shadow: 0 0 10px 5px #6b778c;
 }
 
 .personalStatement {
-  margin-top: 5em;
-  margin-bottom: 5em;
-  margin-right: 5em;
+  margin-right: 80px;
   width: 100%;
   border-bottom: 2px solid #344563;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+  .gridContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   .leftCol {
-    margin-top: 2em;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,10 +94,10 @@ h1 {
     overflow: visible;
   }
   .personalStatement {
-    margin: 2em;
-    padding: 1em;
+    margin: 30px;
+    padding: 10px;
   }
   .indentedParagraph {
-    text-indent: 0em;
+    text-indent: 0;
   }
 }

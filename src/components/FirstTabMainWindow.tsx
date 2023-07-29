@@ -14,6 +14,7 @@ function FirstTabMainWindow() {
           src={require("../images/profile.jpg")}
           className={styles.profileImage}
         />
+        {/* TODO: replace these icons and add shadows on hover */}
         <div className={styles.contactInfo}>
           <a href="mailto:jmf5pu@virginia.edu">
             <FaMailBulk className={styles.socialIcon} />
