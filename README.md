@@ -1,7 +1,6 @@
-## first page TODO
-
-- link akasa in personal statement
-- replace dummy profile image
-- format profile image (background, hover, etc)
-- format email, phone, add copy functionality
-- add github, linkedin iconography with links
+TODO:
+* replace browser icon and tab title
+* add copyright to the bottom of the page
+* make tabs fill width of mainwindow on smaller resolution screens
+* update project screenshots
+* update experience page layout
