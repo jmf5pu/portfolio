@@ -9,6 +9,7 @@
 @media (max-width: 1000px) {
   .parentDiv {
     width: auto;
-    height: 12%;
+    min-height: 12%;
+    max-height: 12%;
   }
 }
