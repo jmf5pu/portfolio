@@ -1,4 +1,5 @@
 .flexContainer {
+  z-index: 1;
   display: flex;
   justify-content: space-evenly;
   height: 10%;
@@ -14,4 +15,12 @@
 
 .carouselButton:hover {
   color: #0052cc;
+}
+
+@media (max-width: 1000px) {
+  .flexContainer {
+    height: auto;
+    width: auto;
+    margin-top: 50px;
+  }
 }

@@ -27,36 +27,77 @@ function CarouselItem(props: CarouselItemProps) {
   return (
     <div className={styles.FlexContainer}>
       <div className={styles.gridContainer}>
-        <div className={styles.imageContainer}>
-          <img
-            src={require("../images/" + imageSrc)}
-            className={styles.image}
-          />
-        </div>
-        <div className={styles.descriptionContainer}>
-          <div className={styles.projectTitle}>
-            {props.project.title}
-            <div className={styles.techList}>
-              {props.project.tech.join(" | ")}
+        {window.innerWidth > 1000 ? (
+          <>
+            <div className={styles.imageContainer}>
+              <img
+                src={require("../images/" + imageSrc)}
+                className={styles.image}
+              />
             </div>
-          </div>
-          <p className={styles.projectDescription}>
-            {props.project.description}
-          </p>
-          <div className={styles.linkParent}>
-            {Object.entries(props.project.urls).map(([key, value]) => (
-              <a
-                href={value}
-                target="_blank"
-                rel="noopener"
-                className={styles.link}
-              >
-                {key}
-                <span className="material-symbols-outlined">open_in_new</span>
-              </a>
-            ))}
-          </div>
-        </div>
+            <div className={styles.descriptionContainer}>
+              <div className={styles.projectTitle}>
+                {props.project.title}
+                <div className={styles.techList}>
+                  {props.project.tech.join(" | ")}
+                </div>
+              </div>
+              <p className={styles.projectDescription}>
+                {props.project.description}
+              </p>
+              <div className={styles.linkParent}>
+                {Object.entries(props.project.urls).map(([key, value]) => (
+                  <a
+                    href={value}
+                    target="_blank"
+                    rel="noopener"
+                    className={styles.link}
+                  >
+                    {key}
+                    <span className="material-symbols-outlined">
+                      open_in_new
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className={styles.descriptionContainer}>
+              <div className={styles.projectTitle}>
+                {props.project.title}
+                <div className={styles.techList}>
+                  {props.project.tech.join(" | ")}
+                </div>
+              </div>
+              <p className={styles.projectDescription}>
+                {props.project.description}
+              </p>
+              <div className={styles.linkParent}>
+                {Object.entries(props.project.urls).map(([key, value]) => (
+                  <a
+                    href={value}
+                    target="_blank"
+                    rel="noopener"
+                    className={styles.link}
+                  >
+                    {key}
+                    <span className="material-symbols-outlined">
+                      open_in_new
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </div>
+            <div className={styles.imageContainer}>
+              <img
+                src={require("../images/" + imageSrc)}
+                className={styles.image}
+              />
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

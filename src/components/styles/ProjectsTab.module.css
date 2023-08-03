@@ -7,24 +7,25 @@
 
 .innerFlexContainer {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  height: 100%;
-  width: 80%;
+  min-height: 100%;
+  max-height: 100%;
+  min-width: 80%;
+  max-width: 80%;
   overflow: hidden;
 }
 
 .itemFlexContainer {
-  height: 100%;
-  width: 100%;
+  min-height: 90%;
+  max-height: 90%;
+  min-width: 100%;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
   white-space: nowrap;
   transition: transform 0.3s;
-}
-
-.buttonFlexContainer {
-  display: flex;
-  flex-direction: column;
-  height: 10%;
-  width: 80%;
 }
 
 .arrowContainer {
@@ -40,6 +41,7 @@
   color: #344563;
   border: none;
   cursor: pointer;
+  align-items: center;
 }
 
 .arrow:hover {
@@ -50,7 +52,24 @@
   .outerFlexContainer {
     height: auto;
     width: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  .innerFlexContainer {
+    background-color: purple;
+    height: auto;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .itemFlexContainer {
+    background-color: green;
+    height: auto;
+  }
+  .arrow {
+    margin-top: 150px;
+  }
+  .itemFlexContainer {
+    margin-top: 0px;
   }
 }

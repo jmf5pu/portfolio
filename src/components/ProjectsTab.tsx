@@ -3,11 +3,6 @@ import CarouselItem from "./CarouselItem";
 import CarouselButtons from "./CarouselButtons";
 import React, { useState } from "react";
 
-// TODO: set up "slideshow" style navigation from left to right
-// with each element being a project
-// add screenshots from project on left
-// title of project on right follow by description and skill used
-// add github link for each project in addition to other links (sourceforge, etc)
 type Project = {
   title: string;
   description: string;
@@ -25,7 +20,7 @@ function ThirdTabMainWindow() {
       description:
         "Civic Connect streamlines the process of contacting your local representatives by providing a single stop for a citizens to lookup their representatives' contact information via an address search then create, save, or share message templates with other users. I participated in a team of four students to construct Civic Connect as a part of my CS3240 class at UVA over a series of 6 biweekly sprints.",
       tech: ["Python", "Django", "PostgreSQL", "Scrum"],
-      images: ["social_surge_1.PNG"],
+      images: ["civic_connect_1.JPG"],
       urls: { "source code": "https://github.com/jmf5pu" },
     },
     {
@@ -33,7 +28,11 @@ function ThirdTabMainWindow() {
       description:
         "CNA Scheduler provides a one stop shop for elder care staff management. Built with Django and deployed on Heroku, this app was in use by six Certified Nursing Assistants and two managers over a 1 year period from 2/2022-2/2023, acting as a scheduling board, care log, and time clock for elder care staff. Carley Scheduler also provided SMS and email notifications of CNA activities to ensure that patients were always being cared for.",
       tech: ["Python", "Django", "PostgreSQL"],
-      images: ["social_surge_1.PNG"],
+      images: [
+        "cna_scheduler_1.JPG",
+        "cna_scheduler_2.JPG",
+        "cna_scheduler_3.JPG",
+      ],
       urls: { "source code": "https://github.com/jmf5pu" },
     },
     {
