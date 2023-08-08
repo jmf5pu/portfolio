@@ -56,14 +56,12 @@
     margin-top: 0px;
   }
   .innerFlexContainer {
-    background-color: purple;
     height: auto;
     width: auto;
     margin-top: 0px;
     margin-bottom: 0px;
   }
   .itemFlexContainer {
-    background-color: green;
     height: auto;
   }
   .arrow {
